@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='https://code.jquery.com/jquery-2.2.4.min.js' type="text/javascript"></script>
+	</head>
+	<body>
+		<div id='testDiv'>abc</div>
+		<script type="text/javascript">
+
+		function getTableau() {
+			console.log("getTableau");
+			return parent.parent.tableau;
+		};
+
+			$(document).ready(function(){
+				test = getTableau();
+
+				document.getElementById('testDiv').innerHTML = test;
+			});
+		</script>
+	</body>
+</html>
